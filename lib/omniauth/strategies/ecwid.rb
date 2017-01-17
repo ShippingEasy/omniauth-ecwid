@@ -14,6 +14,10 @@ module OmniAuth
       # scope: "read_orders update_catalog", etc
       # grant_type: "code"
       option :authorize_options, [:scope, :grant_type]
+
+      uid {
+        access_token.params.fetch("store_id")
+      }
     end
   end
 end
