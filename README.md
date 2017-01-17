@@ -32,6 +32,31 @@ Or install it yourself as:
 
     $ gem install omniauth-ecwid
 
+## Response Example
+
+Expected from Ecwid (as noted in their documentation at https://developers.ecwid.com/api-documentation#complete-oauth-flow):
+
+```
+{
+  "access_token":"secret_secretihaveasecret",
+  "token_type":"bearer",
+  "scope":"read_store_profile update_catalog",
+  "store_id":1003,
+  "public_token":"public_qKDUqKkNXzcj9DejkMUqEkYLq2E6BXM9"
+}
+```
+
+Strategy Output (`auth_hash`):
+
+```
+{
+  "provider"=>"ecwid",
+  "uid"=>1003,
+  "info"=>{},
+  "credentials"=>{"token"=>"secret_secretihaveasecret", "expires"=>false},
+  "extra"=>{}
+}
+```
 
 ## Contributing
 
