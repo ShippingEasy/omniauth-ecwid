@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Omniauth::Ecwid::VERSION
 
-  gem.add_runtime_dependency 'omniauth-oauth2', '~> 1.1'
-  gem.add_development_dependency "bundler", "~> 1.6"
+  gem.add_runtime_dependency 'omniauth-oauth2', '~> 1.5'
+  gem.add_development_dependency "bundler"
   gem.add_development_dependency "rake"
 end
